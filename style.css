@@ -14,7 +14,7 @@ html {
         width: 100%;
         max-width: 75%;
         margin: auto;
-        padding-top: 20;
+        padding-top: 20px;
     }
 }
 
@@ -27,35 +27,69 @@ h1 {
     font-family: 'Inter', sans-serif;
     font-weight: normal;
     font-size: 110px;
-    line-height: normal;
     color: #000000;
+    margin: 0;
+    margin-bottom: 120px;
 }
 
-p {
+p.small {
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 32px;
+    padding-top: 5px;
+    max-width: 80%;
 }
 
-.subscription {
+.row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin: 0;
 }
 
-.column1 {
-    width: 35%;
-    min-width: 300px;
+.row .col-1 {
+    flex: 1;
+    padding-right: 25px;
+}
+@media (max-width: 1280px) {
+    .row {
+        display: block;
+    }
+    .col-1 {
+        width: 100%;
+        padding-top: 25px;
+    }
+    h1 {
+        font-size: 78px;
+        margin-bottom: 25px;
+    }
+    html {
+        max-width: 95%;
+        padding-top: 15px;
+    }
 }
 
-.column2 {
-    width: 65%;
-    min-width: 300px;
+@media (max-width: 420px) {
+    .row {
+        display: block;
+    }
+    .col-1 {
+        width: 100%;
+        padding-top: 25px;
+    }
+    h1 {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }   
+    html {
+        max-width: 95%;
+        padding-top: 15px;
+    }
+ 
 }
+
+
 
 /* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
 Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
@@ -63,6 +97,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 #mc_embed_signup form {
     text-align: center;
     padding: 10px 0 10px 0;
+    float: left;
 }
 
 .mc-field-group {
@@ -85,7 +120,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     padding: 0px 0.4em;
     display: inline-block;
     margin: 0;
-    width: 350px;
+    width: 280px;
     vertical-align: top;
 }
 
