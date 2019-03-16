@@ -120,6 +120,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     padding: 0px 0.4em;
     display: inline-block;
     margin: 0;
+    margin-bottom: 15px;
     width: 280px;
     vertical-align: top;
 }
